@@ -8,7 +8,7 @@ import numpy as np
 class Game(object):
     def __init__(self, start_pos_snake, width, height, initial_direction):
         self.busy = True
-        self.snake = [start_pos_snake, start_pos_snake - initial_direction, start_pos_snake - initial_direction - initial_direction]
+        self.snake = [start_pos_snake, start_pos_snake - initial_direction, start_pos_snake - 2 * initial_direction]
         self.width = width
         self.height = height
         self.direction = initial_direction
